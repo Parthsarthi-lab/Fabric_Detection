@@ -2,25 +2,16 @@
 
 ## Overview
 
-This project implements a machine learning-based solution for detecting fabric types from images. The model is capable of classifying different types of fabrics such as corduroy, denim, and linen. It has been built using a combination of image processing techniques, feature extraction methods, and machine learning algorithms.
+This project implements a machine learning-based solution for detecting fabric types from images. The model is capable of classifying two types of fabrics, viz., corduroy and denim. 
 
-The project has been developed with modular code, ensuring that various components (training, feature extraction, deployment) are organized for ease of use, scaling, and further enhancement. This branch represents the stable and production-ready version of the project.
+Initially we started with six fabrics, viz., cotton, corduroy, denim, linen and wool. Through further literature review we narrowed down to corduroy and denim.
 
-## Features
+First the project was prototyped in jupyter notebooks and then the final solution was implemented in modular code structure ensuring that various components (training, feature extraction, deployment) are organized for ease of use, scaling, and further enhancement. This branch represents the stable and production-ready version of the project.
 
-- **Fabric Classification**: Supports classification of fabric types like corduroy, denim, and linen.
-- **Image Processing**: Pre-processes the images for better classification accuracy.
-- **In-Memory Processing**: Images are processed directly in-memory without being stored on disk, ensuring a fast and lightweight solution.
-- **Deployment-Ready**: Includes configurations for deploying the model on AWS Elastic Beanstalk with minimal setup.
 
-## Project Structure
+## Full Documentation
 
-- **`artifacts/`**: Stores model artifacts such as the trained model, configurations, and logs.
-- **`common/`**: Contains utility scripts such as the configuration manager.
-- **`deployment/`**: Contains the deployment pipeline code, including the `Flask` app for serving predictions.
-- **`training/`**: Includes the training pipeline code for creating and validating the model.
-- **`requirements.txt`**: Lists all the dependencies needed for the project.
-- **`app.py`**: The main Flask application that serves predictions.
+See the Wiki for this repository to gain a complete understanding of how this project was made.
 
 ## Installation
 
